@@ -1,0 +1,745 @@
+<html>
+  <head>
+    <style>
+      #title{
+        background-color:rgba(235,246,250,0.5);
+        width:80%;
+        height:9%;
+        
+        font-size:175%;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top:2%;
+        text-align: center;
+      }
+      
+      #checkin {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:2%;
+      }
+      
+     
+      #full{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      
+      #enterbutton{
+      margin-top:0%;
+      
+        
+      }
+      #deleteb{
+        
+      }
+      #rmlock{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #checkin2 {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:2%;
+      }
+      #full2{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      #enterbutton2{
+      margin-top:0%;
+      
+        
+      }
+      #deleteb2{
+       
+      }
+      #rmlock2{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #checkin3 {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:2%;
+      }
+      
+      #full3{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      
+      #enterbutton3{
+      margin-top:0%;
+     
+        
+      }
+      #deleteb3{
+        
+      }
+      #rmlock3{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #checkin4 {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:4%;
+      }
+      
+      #full4{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      
+      #enterbutton4{
+      margin-top:0%;
+      
+        
+      }
+      #deleteb4{
+       
+      }
+      #rmlock4{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #checkin5 {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:4%;
+      }
+      
+      #full5{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      
+      #enterbutton5{
+      margin-top:0%;
+     
+        
+      }
+      #deleteb5{
+        
+      }
+      #rmlock5{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #checkin6 {
+        width:20%;
+        height:29%;
+        float:left;
+        background-color:rgba(135,206,235,0.7);
+        margin-left:1%;
+        margin-top:4%;
+      }
+      
+      #full6{
+        margin-top:-5%;
+        margin-left:5%;
+      }
+      
+      #enterbutton6{
+      margin-top:0%;
+     
+        
+      }
+      #deleteb6{
+        
+      }
+      #rmlock6{
+        margin-top:-2%;
+        float:left;
+        margin-left:5%;
+      }
+      #timelist{
+        background-color:rgba(235,246,250,0.5);
+        width:17%;
+        height:80%;
+        float:right;
+        margin-left:3%;
+        margin-top:2%;
+      }
+      
+      #namelist{
+        background-color:rgba(235,246,250,0.5);
+        width:17%;
+        height:80%;
+        float:right;
+        margin-left:0%;
+        margin-right:0%;
+        margin-top:2%;
+      }
+      body{
+        font-size:15px;
+        color:darkgreen;
+        background-image: url("sky1.jpeg");
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        margin:0px;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="title"><h1 id="titlewords">Sky Hotel</h1></div>
+    <div id="checkin">
+      <h3 id="room">Room #1<button onclick="clearall()">clear</button><button onclick="lockerha()">Lock/Unlock</button></h3>
+      <div id="full1"><h4 id="full"></h4><h4 id="rmlock">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user"><button onclick="addme()" id="enterbutton">Enter</button>
+    
+      <input type = "number" id = "delete"><button onclick="remove()" id="deleteb">Delete</button>
+    
+      <ol id="List1">
+        
+      
+      </ol>
+    </div>
+    
+    
+    <div id="checkin2">
+      <h3>Room #2<button onclick="clearall2()">clear</button><button onclick="lockerha2()">Lock/Unlock</button></h3>
+      <div id="full12"><h4 id="full2"></h4><h4 id="rmlock2">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user2"><button onclick="addme2()" id="enterbutton2">Enter</button>
+    
+      <input type = "number" id = "delete2"><button onclick="remove2()" id="deleteb2">Delete</button>
+    
+      <ol id="List2">
+        
+      
+      </ol>
+    </div>
+    
+    <div id="checkin3">
+      <h3>Room #3<button onclick="clearall3()">clear</button><button onclick="lockerha3()">Lock/Unlock</button></h3>
+      <div id="full13"><h4 id="full3"></h4><h4 id="rmlock3">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user3"><button onclick="addme3()" id="enterbutton3">Enter</button>
+    
+      <input type = "number" id = "delete3"><button onclick="remove3()" id="deleteb3">Delete</button>
+    
+      <ol id="List3">
+        
+      
+      </ol>
+    </div>
+    
+    
+    <div id="namelist">
+      <ol id="nameL">
+      
+      </ol>
+      
+    </div>
+    <div id="timelist">
+      <ol id="timeL">
+      
+      </ol>
+    </div>
+    
+    <div id="checkin4">
+      <h3>Room #4<button onclick="clearall4()">clear</button><button onclick="lockerha4()">Lock/Unlock</button></h3>
+      <div id="full14"><h4 id="full4"></h4><h4 id="rmlock4">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user4"><button onclick="addme4()" id="enterbutton4">Enter</button>
+    
+      <input type = "number" id = "delete4"><button onclick="remove4()" id="deleteb4">Delete</button>
+    
+      <ol id="List4">
+        
+      
+      </ol>
+    </div>
+    
+    <div id="checkin5">
+      <h3>Room #5<button onclick="clearall5()">clear</button><button onclick="lockerha5()">Lock/Unlock</button></h3>
+      <div id="full15"><h4 id="full5"></h4><h4 id="rmlock5">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user5"><button onclick="addme5()" id="enterbutton5">Enter</button>
+    
+      <input type = "number" id = "delete5"><button onclick="remove5()" id="deleteb5">Delete</button>
+    
+      <ol id="List5">
+        
+      
+      </ol>
+    </div>
+    
+    <div id="checkin6">
+      <h3>Room #6<button onclick="clearall6()">clear</button><button onclick="lockerha6()">Lock/Unlock</button></h3>
+      <div id="full16"><h4 id="full6"></h4><h4 id="rmlock6">The Room is Unlocked</h4></div>
+      <input type = "text" id = "user6"><button onclick="addme6()" id="enterbutton6">Enter</button>
+    
+      <input type = "number" id = "delete6"><button onclick="remove6()" id="deleteb6">Delete</button>
+    
+      <ol id="List6">
+        
+      
+      </ol>
+    </div>
+    
+    <script>
+      
+      var x = 0;
+      
+      var vis = true
+      function clearall(){
+        
+        for(i=0; i<5;i++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent = document.getElementById("List1");
+          var child = parent.childNodes[0]
+          parent.removeChild(child)
+          x=0;
+          document.getElementById("full").innerHTML = ""
+        }
+        
+      }
+      function addme() {
+        if(x>3){
+          document.getElementById("full").innerHTML = "The Room's full"
+          return
+        }
+        
+        var newList = document.createElement("li");
+        newList.appendChild(document.createTextNode(document.getElementById("user").value));
+        
+        var position = document.getElementById("List1");
+        position.appendChild(newList);
+        
+        var newList = document.createElement("li");
+        newList.appendChild(document.createTextNode(document.getElementById("user").value));
+        
+        var position = document.getElementById("timeL");
+        position.appendChild(newList);
+        
+        var date = new Date();
+        var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        
+        var newList = document.createElement("li");
+        newList.appendChild(document.createTextNode(time));
+        
+        var position = document.getElementById("nameL");
+        position.appendChild(newList);
+        
+        document.getElementById('user').value = ""
+        x++
+      }
+      function remove() {
+        var itemnum = document.getElementById('delete').value
+        var z = parseInt(itemnum)
+        var parent = document.getElementById("List1");
+        var child = parent.childNodes[z-1]
+        parent.removeChild(child)
+        document.getElementById('delete').value = ""
+        x--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha(){
+        if(vis===true) {
+          document.getElementById("enterbutton").style.visibility = "hidden"
+          document.getElementById("deleteb").style.visibility = "hidden"
+          document.getElementById("rmlock").innerHTML = "The room is locked"
+          vis=false
+        }
+        else{
+          document.getElementById("enterbutton").style.visibility = "visible"
+          document.getElementById("deleteb").style.visibility = "visible"
+          document.getElementById("rmlock").innerHTML = "The room is Unlocked"
+          vis=true
+        }
+        
+        
+        
+        
+      }
+      
+      
+      
+      var x2 = 0
+      
+      var vis2 = true
+      function clearall2(){
+        
+        for(i2=0; i2<5;i2++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent2 = document.getElementById("List2");
+          var child2 = parent2.childNodes[0]
+          parent2.removeChild(child2)
+          x2=0;
+          document.getElementById("full2").innerHTML = ""
+        }
+        
+      }
+      function addme2() {
+        if(x2 > 3){
+          document.getElementById("full2").innerHTML = "The Room's full"
+          return
+        }
+        var newList2 = document.createElement("li");
+        newList2.appendChild(document.createTextNode(document.getElementById("user2").value));
+        
+        var position2 = document.getElementById("List2");
+        position2.appendChild(newList2);
+        var newList2 = document.createElement("li");
+        newList2.appendChild(document.createTextNode(document.getElementById("user2").value));
+        
+        var position2 = document.getElementById("timeL");
+        position2.appendChild(newList2);
+        
+        var date2 = new Date();
+        var time2 = date2.getHours() + ":" + date2.getMinutes() + ":" + date2.getSeconds();
+        
+        var newList2 = document.createElement("li");
+        newList2.appendChild(document.createTextNode(time2));
+        
+        var position2 = document.getElementById("nameL");
+        position2.appendChild(newList2);
+        document.getElementById('user2').value = ""
+        x2++
+        
+      }
+      function remove2() {
+        var itemnum2 = document.getElementById('delete2').value
+        var z2 = parseInt(itemnum2)
+        var parent2 = document.getElementById("List2");
+        var child2 = parent2.childNodes[z2-1]
+        parent2.removeChild(child2)
+        document.getElementById('delete2').value = ""
+        x2--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha2(){
+        if(vis2===true) {
+          document.getElementById("enterbutton2").style.visibility = "hidden"
+          document.getElementById("deleteb2").style.visibility = "hidden"
+          document.getElementById("rmlock2").innerHTML = "The room is locked"
+          vis2=false
+        }
+        else{
+          
+          document.getElementById("enterbutton2").style.visibility = "visible"
+          document.getElementById("deleteb2").style.visibility = "visible"
+          document.getElementById("rmlock2").innerHTML = "The Room is Unlocked"
+          vis2=true
+        }
+        
+        
+        
+        
+      }
+      var x3 = 0
+      
+      var vis3 = true
+      function clearall3(){
+        
+        for(i3=0; i3<5;i3++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent3 = document.getElementById("List3");
+          var child3 = parent3.childNodes[0]
+          parent3.removeChild(child3)
+          x3=0;
+          document.getElementById("full3").innerHTML = ""
+        }
+        
+      }
+      function addme3() {
+        if(x3 > 3){
+          document.getElementById("full3").innerHTML = "The Room's full"
+          return
+        }
+        var newList3 = document.createElement("li");
+        newList3.appendChild(document.createTextNode(document.getElementById("user3").value));
+        
+        var position3 = document.getElementById("List3");
+        position3.appendChild(newList3);
+        var newList3 = document.createElement("li");
+        newList3.appendChild(document.createTextNode(document.getElementById("user3").value));
+        
+        var position3 = document.getElementById("timeL");
+        position3.appendChild(newList3);
+        
+        var date3 = new Date();
+        var time3 = date3.getHours() + ":" + date3.getMinutes() + ":" + date3.getSeconds();
+        
+        var newList3 = document.createElement("li");
+        newList3.appendChild(document.createTextNode(time3));
+        
+        var position3 = document.getElementById("nameL");
+        position3.appendChild(newList3);
+        document.getElementById('user3').value = ""
+        x3++
+        
+      }
+      function remove3() {
+        var itemnum3 = document.getElementById('delete3').value
+        var z3 = parseInt(itemnum3)
+        var parent3 = document.getElementById("List3");
+        var child3 = parent3.childNodes[z3-1]
+        parent3.removeChild(child3)
+        document.getElementById('delete3').value = ""
+        x3--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha3(){
+        if(vis3===true) {
+          document.getElementById("enterbutton3").style.visibility = "hidden"
+          document.getElementById("deleteb3").style.visibility = "hidden"
+          document.getElementById("rmlock3").innerHTML = "The room is locked"
+          vis3=false
+        }
+        else{
+          
+          document.getElementById("enterbutton3").style.visibility = "visible"
+          document.getElementById("deleteb3").style.visibility = "visible"
+          document.getElementById("rmlock3").innerHTML = "The Room is Unlocked"
+          vis3=true
+        }
+        
+        
+        
+        
+      }
+      var x4 = 0
+      
+      var vis4 = true
+      function clearall4(){
+        
+        for(i4=0; i4<5;i4++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent4 = document.getElementById("List4");
+          var child4 = parent4.childNodes[0]
+          parent4.removeChild(child4)
+          x4=0;
+          document.getElementById("full4").innerHTML = ""
+        }
+        
+      }
+      function addme4() {
+        if(x4 > 3){
+          document.getElementById("full4").innerHTML = "The Room's full"
+          return
+        }
+        var newList4 = document.createElement("li");
+        newList4.appendChild(document.createTextNode(document.getElementById("user4").value));
+        
+        var position4 = document.getElementById("List4");
+        position4.appendChild(newList4);
+        var newList4 = document.createElement("li");
+        newList4.appendChild(document.createTextNode(document.getElementById("user4").value));
+        
+        var position4 = document.getElementById("timeL");
+        position4.appendChild(newList4);
+        
+        var date4 = new Date();
+        var time4 = date4.getHours() + ":" + date4.getMinutes() + ":" + date4.getSeconds();
+        
+        var newList4 = document.createElement("li");
+        newList4.appendChild(document.createTextNode(time4));
+        
+        var position4 = document.getElementById("nameL");
+        position4.appendChild(newList4);
+        document.getElementById('user4').value = ""
+        x4++
+        
+      }
+      function remove4() {
+        var itemnum4 = document.getElementById('delete4').value
+        var z4 = parseInt(itemnum4)
+        var parent4 = document.getElementById("List4");
+        var child4 = parent4.childNodes[z4-1]
+        parent4.removeChild(child4)
+        document.getElementById('delete4').value = ""
+        x4--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha4(){
+        if(vis4===true) {
+          document.getElementById("enterbutton4").style.visibility = "hidden"
+          document.getElementById("deleteb4").style.visibility = "hidden"
+          document.getElementById("rmlock4").innerHTML = "The room is locked"
+          vis4=false
+        }
+        else{
+          
+          document.getElementById("enterbutton4").style.visibility = "visible"
+          document.getElementById("deleteb4").style.visibility = "visible"
+          document.getElementById("rmlock4").innerHTML = "The Room is Unlocked"
+          vis4=true
+        }
+        
+        
+        
+        
+      }
+      var x5 = 0
+      
+      var vis5 = true
+      function clearall5(){
+        
+        for(i5=0; i5<5;i5++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent5 = document.getElementById("List5");
+          var child5 = parent5.childNodes[0]
+          parent5.removeChild(child5)
+          x5=0;
+          document.getElementById("full5").innerHTML = ""
+        }
+        
+      }
+      function addme5() {
+        if(x5 > 3){
+          document.getElementById("full5").innerHTML = "The Room's full"
+          return
+        }
+        var newList5 = document.createElement("li");
+        newList5.appendChild(document.createTextNode(document.getElementById("user5").value));
+        
+        var position5 = document.getElementById("List5");
+        position5.appendChild(newList5);
+        var newList5 = document.createElement("li");
+        newList5.appendChild(document.createTextNode(document.getElementById("user5").value));
+        
+        var position5 = document.getElementById("timeL");
+        position5.appendChild(newList5);
+        
+        var date5 = new Date();
+        var time5 = date5.getHours() + ":" + date5.getMinutes() + ":" + date5.getSeconds();
+        
+        var newList5 = document.createElement("li");
+        newList5.appendChild(document.createTextNode(time5));
+        
+        var position5 = document.getElementById("nameL");
+        position5.appendChild(newList5);
+        document.getElementById('user5').value = ""
+        x5++
+        
+      }
+      function remove5() {
+        var itemnum5 = document.getElementById('delete5').value
+        var z5 = parseInt(itemnum5)
+        var parent5 = document.getElementById("List5");
+        var child5 = parent5.childNodes[z5-1]
+        parent5.removeChild(child5)
+        document.getElementById('delete5').value = ""
+        x5--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha5(){
+        if(vis5===true) {
+          document.getElementById("enterbutton5").style.visibility = "hidden"
+          document.getElementById("deleteb5").style.visibility = "hidden"
+          document.getElementById("rmlock5").innerHTML = "The room is locked"
+          vis5=false
+        }
+        else{
+          
+          document.getElementById("enterbutton5").style.visibility = "visible"
+          document.getElementById("deleteb5").style.visibility = "visible"
+          document.getElementById("rmlock5").innerHTML = "The Room is Unlocked"
+          vis5=true
+        }
+        
+        
+        
+        
+      }
+      var x6 = 0
+      
+      var vis6 = true
+      function clearall6(){
+        
+        for(i6=0; i6<5;i6++){
+          //travin told me about child nodes and how to use them. There was no copying involved. only teaching.
+          
+          var parent6 = document.getElementById("List6");
+          var child6 = parent6.childNodes[0]
+          parent6.removeChild(child6)
+          x6=0;
+          document.getElementById("full6").innerHTML = ""
+        }
+        
+      }
+      function addme6() {
+        if(x6 > 3){
+          document.getElementById("full6").innerHTML = "The Room's full"
+          return
+        }
+        var newList6 = document.createElement("li");
+        newList6.appendChild(document.createTextNode(document.getElementById("user6").value));
+        
+        var position6 = document.getElementById("List6");
+        position6.appendChild(newList6);
+        var newList6 = document.createElement("li");
+        newList6.appendChild(document.createTextNode(document.getElementById("user6").value));
+        
+        var position6 = document.getElementById("timeL");
+        position6.appendChild(newList6);
+        
+        var date6 = new Date();
+        var time6 = date6.getHours() + ":" + date6.getMinutes() + ":" + date6.getSeconds();
+        
+        var newList6 = document.createElement("li");
+        newList6.appendChild(document.createTextNode(time6));
+        
+        var position6 = document.getElementById("nameL");
+        position6.appendChild(newList6);
+        document.getElementById('user6').value = ""
+        x6++
+        
+      }
+      function remove6() {
+        var itemnum6 = document.getElementById('delete6').value
+        var z6 = parseInt(itemnum6)
+        var parent6 = document.getElementById("List6");
+        var child6 = parent6.childNodes[z6-1]
+        parent6.removeChild(child6)
+        document.getElementById('delete6').value = ""
+        x6--
+        document.getElementById("full").innerHTML = ""
+      }
+      function lockerha6(){
+        if(vis6===true) {
+          document.getElementById("enterbutton6").style.visibility = "hidden"
+          document.getElementById("deleteb6").style.visibility = "hidden"
+          document.getElementById("rmlock6").innerHTML = "The room is locked"
+          vis6=false
+        }
+        else{
+          
+          document.getElementById("enterbutton6").style.visibility = "visible"
+          document.getElementById("deleteb6").style.visibility = "visible"
+          document.getElementById("rmlock6").innerHTML = "The Room is Unlocked"
+          vis6=true
+        }
+        
+      }
+    </script>
+    
+  </body>
+</html>
+
