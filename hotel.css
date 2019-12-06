@@ -1,0 +1,182 @@
+#title {
+    background-color: rgba(235, 246, 250, 0.5);
+    width: 80%;
+    height: 9%;
+
+    font-size: 175%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  #checkin {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 2%;
+  }
+
+  #full {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton {
+    margin-top: 0%;
+  }
+  #rmlock {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #checkin2 {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 2%;
+  }
+
+  #full2 {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton2 {
+    margin-top: 0%;
+  }
+
+  #rmlock2 {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #checkin3 {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 2%;
+  }
+
+  #full3 {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton3 {
+    margin-top: 0%;
+  }
+
+  #rmlock3 {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #checkin4 {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 4%;
+  }
+
+  #full4 {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton4 {
+    margin-top: 0%;
+  }
+
+  #rmlock4 {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #checkin5 {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 4%;
+  }
+
+  #full5 {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton5 {
+    margin-top: 0%;
+  }
+
+  #rmlock5 {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #checkin6 {
+    width: 20%;
+    height: 29%;
+    float: left;
+    background-color: rgba(135, 206, 235, 0.7);
+    margin-left: 1%;
+    margin-top: 4%;
+  }
+
+  #full6 {
+    margin-top: -5%;
+    margin-left: 5%;
+  }
+
+  #enterbutton6 {
+    margin-top: 0%;
+  }
+
+  #rmlock6 {
+    margin-top: -2%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  #timelist {
+    background-color: rgba(235, 246, 250, 0.5);
+    width: 17%;
+    height: 80%;
+    float: right;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+
+  #namelist {
+    background-color: rgba(235, 246, 250, 0.5);
+    width: 17%;
+    height: 80%;
+    float: right;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 2%;
+  }
+
+  body {
+    font-size: 15px;
+    color: darkgreen;
+    background-image: url("sky1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0px;
+  }
