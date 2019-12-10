@@ -166,13 +166,15 @@
       var itemnum = document.getElementById('delete').value
       var z = parseInt(itemnum)
       var parent = document.getElementById("List1");
-      var child = parent.childNodes[z - 1]
-      parent.removeChild(child)
+      parent.removeChild(parent.childNodes[z - 1])
       document.getElementById('delete').value = ""
       x--
       document.getElementById("full").innerHTML = ""
+      if(z == 1){
+        parent.removeChild(parent.childNodes[0])
+      }
     }
-
+   
     function lockerha() {
       if (vis === true) {
         document.getElementById("enterbutton").style.visibility = "hidden"
@@ -242,6 +244,9 @@
       document.getElementById('delete2').value = ""
       x2--
       document.getElementById("full2").innerHTML = ""
+      if(z2 == 1){
+        parent2.removeChild(parent2.childNodes[0])
+      }
     }
 
     function lockerha2() {
@@ -312,6 +317,9 @@
       document.getElementById('delete3').value = ""
       x3--
       document.getElementById("full3").innerHTML = ""
+      if(z3 == 1){
+        parent3.removeChild(parent3.childNodes[0])
+      }
     }
 
     function lockerha3() {
@@ -384,6 +392,9 @@
       document.getElementById('delete4').value = ""
       x4--
       document.getElementById("full4").innerHTML = ""
+      if(z3 == 1){
+        parent3.removeChild(parent3.childNodes[0])
+      }
     }
 
     function lockerha4() {
@@ -457,6 +468,9 @@
       document.getElementById('delete5').value = ""
       x5--
       document.getElementById("full5").innerHTML = ""
+      if(z5 == 1){
+        parent5.removeChild(parent5.childNodes[0])
+      }
     }
 
     function lockerha5() {
@@ -534,6 +548,9 @@
       document.getElementById('delete6').value = ""
       x6--
       document.getElementById("full6").innerHTML = ""
+      if(z6 == 1){
+        parent6.removeChild(parent6.childNodes[0])
+      }
     }
 
     function lockerha6() {
